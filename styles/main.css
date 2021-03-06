@@ -22,7 +22,7 @@
   
   body .currency-converter {
     width: 300px;
-    height: 300px;
+    height: max-content;
     padding: 30px;
     text-align: center;
     font-family: "Open Sans", sans-serif;
