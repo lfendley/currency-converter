@@ -47,7 +47,6 @@ function validateInputField() {
     clearInterval(cdTimer);
     if (!isNaN(Number(inputField.value)) && inputField.value !== "") {
         errorOutput.innerText = "";
-        clearInterval(cdTimer);
         fetchAUDCurrency();
         countdownTimer();
     } else if (inputField.value === "" || inputField.value === null) {
