@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GBP to AUD Currency Converter to see how much those cold frostie bevvies will cost">
+  <title>Currency Converter | GBP to AUD Conversion</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <main>
+    <section class="currency-converter">
+      <h1>Currency Converter</h1>
+      <form>
+        <div>
+          <label for="currency-input">GBP Value:</label>
+          <input type="text" id="currency-input" name="currency-input" title="Enter GBP value" pattern="[0-9]+" aria-required="true">
+        </div>
+        <div id="output-fields">
+          <p id="exchanged-value"></p>
+          <p id="error"></p>
+          <p id="timer" role="timer" aria-live="polite"></p>
+        </div>
+        <div>
+          <button id="submit" type="button">Convert</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

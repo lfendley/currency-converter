@@ -1,0 +1,102 @@
+// Variables
+$openSans: 'Open Sans', sans-serif;
+$white: #ffffff;
+$offwhite: #ecf0f3;
+$lightgrey: #cbced1;
+$grey: #aeaeae;
+$darkgrey: #6f6f6f;
+$offblack: #1a1a1a;
+$red: #eb4242;
+$cta: #8bc34a;
+$ctaHover: #7fb343;
+
+$font-sm: 12px;
+$font-norm: 16px;
+$font-lg: 20px;
+
+* { box-sizing: border-box; }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  color: $grey;
+  background-color: $offwhite;
+
+  .currency-converter {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    text-align: center;
+    font-family: $openSans;
+    font-weight: 700;
+    border-radius: 30px;
+    background-color: $offwhite;
+    box-shadow: 13px 13px 20px $lightgrey, 
+                -13px -13px 20px $white;
+    h1 {
+      color: $darkgrey;
+      font-size: $font-lg;
+    }
+
+    p {
+      font-size: $font-sm;
+      color: $offblack;
+      margin: 0;
+      &#expiry-timer {
+        padding: 10px 0;
+        color: $red;
+      }
+    }
+
+    label {
+      display: block;
+      font-size: $font-sm;
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      margin-bottom: 15px;
+      box-shadow: inset 2px 2px 5px $lightgrey,
+                  inset -2px -2px 5px $white; 
+      font-size: $font-sm;
+      color: $grey;
+    }
+
+    #timer {
+      font-size: $font-sm;
+      margin: .5em 0;
+    }
+
+    div {
+      transition: .5s linear;
+
+      button.submit {
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        justify-content: center;
+        margin: 20px 0 0;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 800;
+        font-family: $openSans;
+        font-size: $font-sm;
+        color: $offwhite;
+        background-color: $green;
+        transition: .5s linear;
+        &:hover {
+          background-color: $ctaHover;
+        }
+      }
+    }
+  }
+}
